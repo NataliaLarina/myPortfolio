@@ -1,5 +1,9 @@
 $main-font: 'Cherry Cream Soda', cursive;
-$light-blue: #DEEBED;
+$pale-blue: #DEEBED;
+$grey: #555;
+$bright-blue: #318ADF;
+$blue: #3A7E9E;
+$light-blue: #84C6F5;
 
 
 body {
@@ -12,7 +16,6 @@ body {
 /*
 	header
 */
-
 .navbar {
   border: none;
 }
@@ -21,39 +24,21 @@ body {
     font-size: 33px;
 }
 .navbar-default {
-    background-color: $light-blue;
+    background-color: $pale-blue;
     margin: 0;
 }
 .navbar-default .navbar-brand {
-    color: #555;
+    color: $grey;
 }
- .navbar-default .navbar-nav>li>a:focus,
-  .navbar-default .navbar-nav>li>a:hover {
-    color: #254117;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-}
-.navbar-default .navbar-brand:focus,
-	.navbar-default .navbar-brand:hover {
-    	color: #254117;
-    	transition: all 0.3s ease-in-out;
-    	-webkit-transition: all 0.3s ease-in-out;
-}
-.navbar-default .navbar-nav>.active>a,
- .navbar-default .navbar-nav>.active>a:focus,
-  .navbar-default .navbar-nav>.active>a:hover{
-  	color: #254117;
-    background: none;
-  }
 .navbar-nav {
   font-size: 18px;
   padding-right: 0px;
 }
 
+
 /*
        home
 */
-
 #home {
 	background: url('https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/12321179_10154768161093345_3888237526442729332_n.jpg?oh=e51ad3d4bdcf63ae28e1c79f62e8468e&oe=57ABE142') center center;
 	background-attachment: fixed, scroll;
@@ -66,14 +51,14 @@ body {
 	color: white;
 }
 
+
 /*
        About
 */
-
 #me {
   max-width: 200px;
   height: auto;
-  border: 7px solid #318ADF;
+  border: 7px solid $bright-blue;
   border-radius: 50%;
   position: relative;
 	display: inline-block;
@@ -90,11 +75,11 @@ body {
 }
 .about h1, h2 {
 	margin: 5%;
-	color: #3A7E9E;
+	color: $blue;
 }
 .about p {
 	font-size: 19px;
-	color: #3A7E9E;
+	color: $blue;
 }
 
 /*
@@ -104,7 +89,7 @@ body {
 	text-align: center;
 	width: 100%;
 	height: 100%;
-	background: #84C6F5;
+	background: $light-blue;
 }
 .portfolio figure{
 	overflow: hidden;
@@ -116,22 +101,14 @@ body {
 .portfolio figure a img {
   height: 315px;
   width: 535px;
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.portfolio figure a:hover img {
-	-webkit-transform: scale(1.4);
-	transform: scale(1.4);
 }
 .portfolio figure:hover {
 	box-shadow: 10px 10px 5px #000;
-
 }
 #portfolio p {
 	font-size: 17px;
 }
+
 /*
        Contact
 */
