@@ -82,10 +82,7 @@ body {
 	font-size: 19px;
 	color: $blue;
 }
-#modal1 {
-	width: 100px;
-	height: 100px;
-}
+
 /*
        Portfolio
 */
@@ -160,20 +157,69 @@ h1 {
 
 
 .modal-content {
-	width:50%;
-  margin:0 auto;
+	width: 800px !important;
+  height: 600px !important;
+	background-color: $light-blue;
+	margin: 0 auto;
 }
 
-.card-back {
-  width: 75px;
-	height: 50px;
-	background-color: $blue;
 
-		// Always leave a space between sets of styles
-		// when nesting in SASS
-	h2, ul {
-		position: relative;
-		top: 55px;
-		font-size: 20px;
+#myModal {
+	background-color: $bright-blue;
+	vertical-align: middle;
+}
+
+
+#myModalLabel {
+	text-align: center;
+	color: $bright-blue;
+	margin-bottom: 20px;
+	font-size: 25px;
+	background-color: $light-blue;
+}
+
+.modal-body {
+	font-size: 15px;
+	text-align: center;
+}
+
+li {
+		list-style: none;
+		font-size: 25px;
 	}
-}
+
+	.modal-dialog {
+	  height: 100%;
+	  width: 100%;
+	  display: flex;
+	  align-items: center;
+	}
+
+
+
+
+
+
+
+
+
+// .card-back {
+// 	position: relative;
+// 	top: 75px;
+//
+// 	height: 315px !important;
+//   width: 535px !important;
+// 	background-color: $blue;
+//
+//
+// 		// Always leave a space between sets of styles
+// 		// when nesting in SASS
+// 	h2, ul {
+// 		position: relative;
+// 		font-size: 20px;
+// 	}
+//
+// 	li {
+// 		list-style: none;
+// 	}
+// }

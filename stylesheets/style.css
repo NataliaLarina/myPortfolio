@@ -66,10 +66,6 @@ body {
   font-size: 19px;
   color: #3A7E9E; }
 
-#modal1 {
-  width: 100px;
-  height: 100px; }
-
 /*
        Portfolio
 */
@@ -135,16 +131,34 @@ h1 {
   .navbar-nav {
     float: right; } }
 .modal-content {
-  width: 50%;
+  width: 800px !important;
+  height: 600px !important;
+  background-color: #84C6F5;
   margin: 0 auto; }
 
-.card-back {
-  width: 75px;
-  height: 50px;
-  background-color: #3A7E9E; }
-  .card-back h2, .card-back ul {
-    position: relative;
-    top: 55px;
-    font-size: 20px; }
+#myModal {
+  background-color: #318ADF;
+  vertical-align: middle; }
+
+#myModalLabel {
+  text-align: center;
+  color: #318ADF;
+  margin-bottom: 20px;
+  font-size: 25px;
+  background-color: #84C6F5; }
+
+.modal-body {
+  font-size: 15px;
+  text-align: center; }
+
+li {
+  list-style: none;
+  font-size: 25px; }
+
+.modal-dialog {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
