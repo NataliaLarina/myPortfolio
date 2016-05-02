@@ -134,5 +134,17 @@ h1 {
 
   .navbar-nav {
     float: right; } }
+.modal-content {
+  width: 50%;
+  margin: 0 auto; }
+
+.card-back {
+  width: 75px;
+  height: 50px;
+  background-color: #3A7E9E; }
+  .card-back h2, .card-back ul {
+    position: relative;
+    top: 55px;
+    font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */

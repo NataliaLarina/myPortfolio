@@ -157,3 +157,23 @@ h1 {
   		float: right;
 	}
 }
+
+
+.modal-content {
+	width:50%;
+  margin:0 auto;
+}
+
+.card-back {
+  width: 75px;
+	height: 50px;
+	background-color: $blue;
+
+		// Always leave a space between sets of styles
+		// when nesting in SASS
+	h2, ul {
+		position: relative;
+		top: 55px;
+		font-size: 20px;
+	}
+}
