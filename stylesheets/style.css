@@ -60,11 +60,13 @@ body {
 
 .about h1, h2 {
   margin: 5%;
-  color: #3A7E9E; }
+  color: #3A7E9E;
+  text-shadow: 3px 3px 3px #DEEBED; }
 
 .about p {
   font-size: 19px;
-  color: #3A7E9E; }
+  color: #3A7E9E;
+  text-shadow: 3px 3px 3px #DEEBED; }
 
 /*
        Portfolio
@@ -85,14 +87,17 @@ body {
   height: 315px;
   width: 535px; }
 
-.portfolio figure:hover {
-  box-shadow: 10px 10px 5px #000; }
-
 #portfolio p {
   font-size: 17px; }
 
 h1 {
-  color: #3A7E9E; }
+  color: #3A7E9E;
+  text-shadow: 3px 3px 3px #DEEBED; }
+
+#github1 {
+  max-width: 120px;
+  height: 80px;
+  text-align: center; }
 
 /*
        Contact
@@ -113,7 +118,7 @@ h1 {
   height: 20px; }
 
 @media (min-width: 768px) {
-  #about, #home, #portfolio {
+  #about, #home {
     padding-top: 9vh; }
 
   .about {
@@ -130,35 +135,34 @@ h1 {
 
   .navbar-nav {
     float: right; } }
-.modal-content {
-  width: 800px !important;
-  height: 600px !important;
-  background-color: #84C6F5;
-  margin: 0 auto; }
-
-#myModal {
-  background-color: #318ADF;
+/*
+       Modal
+*/
+#myModal1, #myModal2, #myModal3, #myModal4 {
+  background-color: #3A7E9E;
   vertical-align: middle; }
 
 #myModalLabel {
   text-align: center;
   color: #318ADF;
   margin-bottom: 20px;
-  font-size: 25px;
-  background-color: #84C6F5; }
+  font-size: 35px;
+  background-color: #7EB6FF; }
 
 .modal-body {
   font-size: 15px;
   text-align: center; }
 
-li {
+li, h4 {
+  text-align: center;
   list-style: none;
-  font-size: 25px; }
+  font-size: 25px;
+  color: #555;
+  text-shadow: 3px 3px 3px #DEEBED; }
 
-.modal-dialog {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center; }
+@media (max-width: 480px) {
+  .portfolio figure a img {
+    height: 200px;
+    width: 400px; } }
 
 /*# sourceMappingURL=style.css.map */

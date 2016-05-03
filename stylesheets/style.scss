@@ -1,6 +1,5 @@
 $main-font: 'Cherry Cream Soda', cursive;
 $pale-blue: #DEEBED;
-// $pale-blue: #F0FFFF;
 $grey: #555;
 $bright-blue: #318ADF;
 $blue: #3A7E9E;
@@ -64,12 +63,10 @@ body {
   position: relative;
 	display: inline-block;
 }
-
 #about {
 	text-align: center;
 	min-height: 100vh;
 	width: 100%;
-	// background: #F7EDFA;
 }
 .about {
 	padding: 0% 15%;
@@ -77,10 +74,12 @@ body {
 .about h1, h2 {
 	margin: 5%;
 	color: $blue;
+	text-shadow: 3px 3px 3px $pale-blue;
 }
 .about p {
 	font-size: 19px;
 	color: $blue;
+	text-shadow: 3px 3px 3px $pale-blue;
 }
 
 /*
@@ -97,20 +96,25 @@ body {
 	margin: 11%;
 	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 	transition: box-shadow .3s ease-in-out;
-
 }
 .portfolio figure a img {
   height: 315px;
   width: 535px;
 }
-.portfolio figure:hover {
-	box-shadow: 10px 10px 5px #000;
-}
+// .portfolio figure:hover {
+// 	box-shadow: 10px 10px 5px #000;
+// }
 #portfolio p {
 	font-size: 17px;
 }
 h1 {
 	color: $blue;
+	text-shadow: 3px 3px 3px $pale-blue;
+}
+#github1 {
+	max-width: 120px;
+	height: 80px;
+	text-align: center;
 }
 
 /*
@@ -123,7 +127,6 @@ h1 {
 	width: 100%;
   font-size: 15px;
 }
-
 #contact img {
 	width: 100%;
 	height: 70%;
@@ -135,7 +138,7 @@ h1 {
 
 
 @media (min-width: 768px) {
-    #about, #home, #portfolio {
+    #about, #home {
 	    padding-top: 9vh;
     }
 	.about {
@@ -153,29 +156,29 @@ h1 {
 	.navbar-nav {
   		float: right;
 	}
+
+	// .portfolio figure a img {
+	//   height: 500px;
+	//   width: 700px;
+	// }
+
 }
 
+/*
+       Modal
+*/
 
-.modal-content {
-	width: 800px !important;
-  height: 600px !important;
-	background-color: $light-blue;
-	margin: 0 auto;
-}
-
-
-#myModal {
-	background-color: $bright-blue;
+#myModal1, #myModal2, #myModal3, #myModal4{
+	background-color: $blue;
 	vertical-align: middle;
 }
-
 
 #myModalLabel {
 	text-align: center;
 	color: $bright-blue;
 	margin-bottom: 20px;
-	font-size: 25px;
-	background-color: $light-blue;
+	font-size: 35px;
+	background-color: #7EB6FF;
 }
 
 .modal-body {
@@ -183,43 +186,18 @@ h1 {
 	text-align: center;
 }
 
-li {
+li, h4 {
+		text-align: center;
 		list-style: none;
 		font-size: 25px;
+		color: $grey;
+		text-shadow: 3px 3px 3px $pale-blue;
 	}
 
-	.modal-dialog {
-	  height: 100%;
-	  width: 100%;
-	  display: flex;
-	  align-items: center;
-	}
+		@media (max-width: 480px) {
 
-
-
-
-
-
-
-
-
-// .card-back {
-// 	position: relative;
-// 	top: 75px;
-//
-// 	height: 315px !important;
-//   width: 535px !important;
-// 	background-color: $blue;
-//
-//
-// 		// Always leave a space between sets of styles
-// 		// when nesting in SASS
-// 	h2, ul {
-// 		position: relative;
-// 		font-size: 20px;
-// 	}
-//
-// 	li {
-// 		list-style: none;
-// 	}
-// }
+			.portfolio figure a img {
+			  height: 200px;
+			  width: 400px;
+			}
+}

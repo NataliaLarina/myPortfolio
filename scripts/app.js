@@ -14,13 +14,3 @@
 //     });
 //
 //
-
-
-$("#card").flip({
-  trigger: 'click',
-  autoSize: false,
-  forceHeight: '200px',
-  forceWidth: '200px'
-});
-
-console.log($('#card'))

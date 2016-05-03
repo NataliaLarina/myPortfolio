@@ -11,7 +11,31 @@
 <body>
   <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Natalia Larina</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+
+
+
+    <!-- <nav class="navbar navbar-default navbar-fixed-top">
       <div id="nav" class="container">
         <div class="navbar-header">
           <a class="navbar-brand page-scroll" href="#home">Natalia Larina</a>
@@ -23,11 +47,12 @@
                 <li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
                 <li><a class="page-scroll" href="#contact">Contact</a></li>
               </ul>
-            </div>
-         </div>
-     </nav>
+           </div>
+      </div>
+     </nav> -->
   <!-- Navbar end -->
   </header>
+
 
   <!-- Home       -->
   <div id="home" class="container">
@@ -38,14 +63,16 @@
   </div>
  <!-- Home end -->
 
+
 <!-- About -->
  <div id="about" class="container">
    <div class="row">
      <div class="col-sm-12 about">
        <h1>About Me</h1>
-        <img id="me" src="images/mypic.jpg" class="img-responsive" alt="">
+       <img id="me" src="images/mypic.jpg" class="img-responsive" alt="">
           <h2>Hello,</h2>
-            <p>I am Natalia &amp; I am a full-stack web developer. Welcome to my website! Please scroll down &amp; check out my portfolio</p>
+            <p>I am Natalia &amp; I am a full-stack web developer.</p>
+            <p>Welcome to my website!</p>
             <p>Front-End: HTML, CSS, JavaScript, jQuery, Angular.js</p>
             <p>Back-End: Ruby, Sinatra, Rails, Node.js, Exspress.js</p>
           </div>
@@ -53,61 +80,155 @@
       </div>
 <!-- About end -->
 
+
 <!-- Portfolio page begin -->
 <div id="portfolio" class="container">
   <div class="col-sm-12">
     <h1>My Portfolio</h1>
       <div class="row">
+        <!-- Project 1 -->
         <div class="col-md-6 portfolio">
           <figure>
-            <a href="#myModal" data-toggle="modal"  data-target="#myModal"><img src="images/game.png" class="img-responsive"></a>
+            <a href="#myModal1" data-toggle="modal"  data-target="#myModal1"><img src="images/webpic.png" class="img-responsive"></a>
           </figure>
         </div>
 
 
-        <div class="col-md-6 portfolio">
-            <div id="card">
-              <div class="front">
-                  <figure>
-                    <img src="images/project2.png" class="img-responsive">
-                   </figure>
+
+        <!-- Modal1 for Project1 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content col-sm-12">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title" id="myModalLabel">Around The World Game</h2>
               </div>
-              <div class="back card-back" id="back">
-                <h2>Technologies used</h2>
+              <div class="modal-body">
+                <h4>Technologies used:</h4>
+                  <ul>
+                   <li>CSS</li>
+                   <li>HTML5</li>
+                   <li>Javascript/jQuery</li>
+                   <li>JSON</li>
+                  </ul>
+                     <a href="https://github.com/NataliaLarina/Around_The_World_Game"><img src="images/github.png" id="github1" /></a>
+                  <!-- <a href="https://github.com/NataliaLarina/Around_The_World_Game" class="link">
+                    https://github.com/NataliaLarina/Around_The_World_Game</a> -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal1 Project1 end -->
+
+        <!-- Project2 -->
+        <div class="col-md-6 portfolio">
+         <figure>
+           <a href="#myModal2" data-toggle="modal" data-target="#myModal2"><img src="images/project2.png" class="img-responsive"></a>
+         </figure>
+        </div>
+
+        <!-- Modal2 for Project2 -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content col-sm-12">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">MyMakeUpKit</h4>
+              </div>
+              <div class="modal-body">
+                <h2>Technologies used:</h2>
                 <ul>
                   <li>CSS</li>
                   <li>HTML5</li>
-                  <li>Javascript</li>
                   <li>Ruby</li>
                   <li>Sinatra</li>
+                  <li>Javascript</li>
                 </ul>
-                <h2>Web Link: https://makeup-kit.herokuapp.com/</h2>
+                <a href="https://makeup-kit.herokuapp.com/">https://makeup-kit.herokuapp.com/</a>
               </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
           </div>
         </div>
-
-        <!-- <div class="col-md-6 portfolio">
-         <figure>
-           <a href="" target="_blank"><img src="images/project2.png" class="img-responsive"></a>
-         </figure>
-        </div> -->
-
-      </div>
+        <!-- Modal2 end -->
+  </div>
+  <!-- end of 1st row in container -->
 
 
-
-
- <div class="row">
+   <div class="row">
+     <!-- Project3 -->
      <div class="col-md-6 portfolio">
        <figure>
-         <a href="" target="_blank"><img src="images/chictreetart.png" class="img-responsive"></a>
+         <a href="#myModal3" data-toggle="modal"  data-target="#myModal3"><img src="images/chictreetart.png" class="img-responsive"></a>
        </figure>
      </div>
+
+     <!-- Modal3 for Project3 -->
+     <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+       <div class="modal-dialog" role="document">
+         <div class="modal-content col-sm-12">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+             <h4 class="modal-title" id="myModalLabel">ChiStreetArt</h4>
+           </div>
+           <div class="modal-body">
+             <h2>Technologies used:</h2>
+             <ul>
+               <li>CSS/LESS</li>
+               <li>HTML5</li>
+               <li>Javascript/jQuery</li>
+               <li>BCrypt</li>
+               <li>Node/Express.js/Handlebars</li>
+               <li>MongoDB</li>
+             </ul>
+             <a href="http://chistreetart.herokuapp.com/">http://chistreetart.herokuapp.com/</a>
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- Modal3 end -->
+
+     <!-- Project4 -->
      <div class="col-md-6 portfolio">
        <figure>
-         <a href="" target="_blank"><img src="images/chictreetart.png" class="img-responsive"></a>
+         <a href="#myModal4" data-toggle="modal"  data-target="#myModal4"><img src="images/chictreetart.png" class="img-responsive"></a>
        </figure>
      </div>
+
+     <!-- Modal4 for Project4 -->
+     <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+       <div class="modal-dialog" role="document">
+         <div class="modal-content col-sm-12">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+             <h4 class="modal-title" id="myModalLabel">Around The World Game</h4>
+           </div>
+           <div class="modal-body">
+             <h2>Technologies used:</h2>
+             <ul>
+               <li>CSS</li>
+               <li>HTML5</li>
+               <li>Ruby</li>
+               <li>Sinatra</li>
+               <li>Javascript</li>
+             </ul>
+             <h3>Web Link: https://makeup-kit.herokuapp.com/</h3>
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- Modal4 end -->
    </div>
  </div>
 </div>
@@ -128,38 +249,6 @@
      </div>
    </div>
 <!-- Contact end -->
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Around The World Game</h4>
-      </div>
-      <div class="modal-body">
-        <h2>Technologies used:</h2>
-        <ul>
-          <li>CSS</li>
-          <li>HTML5</li>
-          <li>Javascript</li>
-          <li>jQuery</li>
-          <li>JSON</li>
-        </ul>
-        <!-- <h2>Web Link: https://makeup-kit.herokuapp.com/</h2> -->
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-        <!-- modal end -->
-
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="scripts/flip.js"></script>
